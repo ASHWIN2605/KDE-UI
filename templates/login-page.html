@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>KDE Attractions Parser</title>
+            <script>
+            function Conversion()
+            {
+    
+                var httpc = new XMLHttpRequest();
+                var  url = "http://127.0.0.1:5000/?lat=50&lon=40";
+                httpc.open("POST",url,true);
+
+                httpc.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+               // httpc.setRequestHeader("Content-Length",1);
+                httpc.onreadystatechange = function()
+                {
+                if(httpc.readyState == 4 && httpc.status==200)
+                {
+                    alert(httpc.responseText)
+                }
+                }
+                httpc.send();
+            }
+
+            function clearsession(query)
+            {
+                var httpc = new XMLHttpRequest();
+                var  url = "http://localhost:3030/ds/?query="+query;
+                httpc.open("POST",url,true);
+
+                httpc.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+                httpc.setRequestHeader("Content-Length",1);
+                httpc.onreadystatechange = function()
+                {
+                if(httpc.readyState == 4 && httpc.status==200)
+                {
+                    alert(httpc.responseText)
+                }
+                }
+                httpc.send();
+            }
+           /* function getQuery()
+            {
+                var query = "PREFIX obo:<https://www.scss.tcd.ie/~sharmah/project.owl#>SELECT ?lat ?longWHERE {  ?attr a obo:attractions.  ?attr obo:hasName "O'Connell Bridge".  ?attr obo:hasCoordinate ?con.  ?con obo:hasLatitude ?lat.  ?con obo:hasLongitude ?long.}LIMIT 10";
+                var enqu = encodeURI(query);
+            }*/
+
+        
+
+            </script>
+    </head>
+
+
+<body>
+        <input type="button" value="click this" onclick="Conversion()"/>
+       <!-- <div class="box">
+            <form method="POST" action="/hello">
+                <h1>Query</h1>
+                <span>1. What is the Bus Stop near ?</span><input type="submit" name="Get Query" id="gQ" onclick="getQuery()">
+                <input type="text" name="latitude" placeholder="latitude" class="email" />
+                <input type="text" name="longitude" placeholder="longitude" class="email" />
+                <input type="submit" class="btn" value="Result" onclick="clearsession()"/>
+
+                <input type="button" value="click this" onclick="Conversion()"/>
+            </form>
+            <form action="/registration" method="GET">
+                    <input type="submit" id="btn2" value="Register"/>
+            </form>
+        </div>-->
+</body>
+</html>  
+
