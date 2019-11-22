@@ -1,0 +1,845 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Clearway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Zone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Contact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Street"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#cityInCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#countryHasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasClearway"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasContact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasParkingzone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#cityname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#clearway"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#clearwayHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#comment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#easting"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#exactLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#furtherInformation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hoursOfOperation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#installed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#located"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#northing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#placedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#prov"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#spaceCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#stopName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#stopNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#tariff"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#telephone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#uniqueBritishIslesID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#x_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#y_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#zone"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Clearway"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#clearway"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Clearway"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#clearwayHours"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Zone"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#zone"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCity"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#City"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasContact"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Contact"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCountry"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Country"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Street"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Street"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#stopName"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#stopNumber"/>
+            <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#uniqueBritishIslesID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#City"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#cityname"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Contact"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#telephone"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Contact"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#url"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#easting"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#latitude"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#longitude"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#northing"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#prov"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#x_value"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#y_value"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Country"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCity"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#City"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasContact"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Contact"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCountry"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Country"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Street"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasClearway"/>
+            <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Clearway"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasParkingzone"/>
+            <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Zone"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+            <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Street"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#comment"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#exactLocation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#furtherInformation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hoursOfOperation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#installed"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#located"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#number"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#placedBy"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#spaceCount"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#tariff"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Street"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCity"/>
+        <ObjectProperty IRI="topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#cityInCountry"/>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#countryHasCity"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#cityInCountry"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#countryHasCity"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCity"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCity"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasClearway"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasContact"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasContact"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCountry"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCountry"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasParkingzone"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#cityInCountry"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#countryHasCity"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCity"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasClearway"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Clearway"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasContact"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Contact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCoordinate"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasCountry"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasParkingzone"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Zone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hasStreet"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Street"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#cityname"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#clearway"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Clearway"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#clearwayHours"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Clearway"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#comment"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#easting"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#exactLocation"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#furtherInformation"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hoursOfOperation"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#installed"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#latitude"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#located"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#longitude"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Attractions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Street"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#northing"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#number"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#placedBy"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#prov"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#spaceCount"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#stopName"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#stopNumber"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#tariff"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#telephone"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Contact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#uniqueBritishIslesID"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Busstop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#url"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Contact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#x_value"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#y_value"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Coordinate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#zone"/>
+        <Class IRI="https://www.scss.tcd.ie/~sharmah/project.owl#Parking"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#cityname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#clearway"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#clearwayHours"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#comment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#easting"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#exactLocation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#furtherInformation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#hoursOfOperation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#installed"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#latitude"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#located"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#longitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#northing"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#placedBy"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#prov"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#spaceCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#stopName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#stopNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#tariff"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#telephone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#uniqueBritishIslesID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#url"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#x_value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#y_value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.co-ode.org/ontologies/ont.owl#zone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
